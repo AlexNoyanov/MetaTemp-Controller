@@ -119,11 +119,6 @@ void Sonar::setMM(bool isMM){
   // Reads the echoPin, returns the sound wave travel time in microseconds
   _duration = pulseIn(_echoPin, HIGH);
        
-  // Calculating the distance
-  _distance = _duration * 0.034 / 2; // Speed of sound wave divided by 2 (go and back)
-  // Displays the distance on the Serial Monitor
-  // ==== USE serialTest(); TO CALIBRATE SENSOR! =====
-  //return _distance;
   }
 
      void Sonar::readDistanceNWpMM()
@@ -148,8 +143,3 @@ void Sonar::setMM(bool isMM){
     return _distance;
   }
   
-// Waterproof sensor here:
- WPSonar::WPSonar(int trig, int echo) : Sonar(trig, echo)//, _mySerial(echo, trig)
-{
-    setPin(trig, echo);
-}

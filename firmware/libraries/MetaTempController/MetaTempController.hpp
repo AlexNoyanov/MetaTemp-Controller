@@ -61,7 +61,6 @@ class MetaTempController {
     public:
         MetaTempController();
         MetaTempController(int leftPins[], int rightPins[]);
-        MetaTempController(int trig, int echo, bool isWp);
     
         void setPin(int trig,int echo);
 private:
