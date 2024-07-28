@@ -12,7 +12,7 @@
 
 #include "KelvinVR.h"
 
-Kelvin::Kelvin(modelName)
+Kelvin::Kelvin(string modelName)
 { 
 	_modelName = modelName;
 }
